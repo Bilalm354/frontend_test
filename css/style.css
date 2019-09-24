@@ -38,6 +38,7 @@ Typography
 ==========
 */
 
+
 /* 
 ==========
 Containers 
@@ -51,6 +52,7 @@ Containers
 
 }
 
+
 .container-navbar {
     background: #F0F0F0;
     margin-bottom: 3em;
@@ -61,6 +63,7 @@ Containers
     width: 70%;
     margin: 0 auto;
 }
+
 
 .container-text {
     max-width: 70%;
@@ -74,6 +77,7 @@ Containers
     background: #F0F0F0;
 
 }
+
 
 .footer-inside {
     display: flex;
@@ -119,6 +123,7 @@ Containers
 .footer-social li {
     display: inline-block;
 }
+
 
 /* 
 ==========
@@ -242,6 +247,10 @@ footer img:hover {
     opacity: 0.5;
 }
 
+.mobile-footer {
+    display: none;
+}
+
 /* 
 ==========
 Misc 
@@ -285,4 +294,192 @@ a:hover {
     position: relative;
     left: 11.5em;
     color: gray;
+}
+
+.search-mobile {
+    margin: auto 0;
+    display: none;
+}
+
+
+
+.navbar {
+    text-align: right;
+    width: 100%;
+}
+
+#toggle {
+    display: block;
+}
+
+.mobile-button {
+    display: none;
+}
+
+.burger {
+    color: white;
+    font-size: 2em;
+    background: #EB512D;
+    padding: 0 0.3em;
+    border-radius: 5%;
+}
+
+/* 
+============
+Media Queries
+=============
+*/
+
+@media (max-width: 600px) {
+    * {
+        width: auto;
+    }
+
+    .container-logo-search,
+    .container-text,
+    .grid-container,
+    .footer-inside {
+        width: 90%;
+        max-width: 90%;
+
+    }
+
+
+    nav a {
+        margin-right: 0;
+    }
+
+    .footer-inside {
+        display: none;
+    }
+
+
+    .mobile-footer {
+        display: block;
+    }
+
+
+    .mobile-footer a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0.7em 0;
+        color: black;
+        text-indent: 1em;
+        font-weight: 300;
+    }
+
+    .line-under {
+        border-bottom: 1px solid black;
+    }
+
+    #search {
+        height: 2em;
+        width: 2em;
+        padding: 0.8em;
+        border: 1px solid gray;
+
+    }
+
+    #search:hover {
+        height: 2em;
+        width: 14em;
+        padding: 0.5em;
+        border: 1px solid gray;
+
+    }
+
+    .search {
+        display: none;
+    }
+
+    .search-mobile {
+        display: block;
+        color: gray;
+
+    }
+
+
+
+    span {
+        position: relative;
+        left: -2em;
+    }
+
+
+    .mobile-button {
+        display: block;
+        padding: 0.5em 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .burger {
+        cursor: pointer;
+    }
+
+
+
+    .container-inside {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: block;
+        text-align: center;
+
+
+    }
+
+    nav li {}
+
+    nav a {
+        display: block;
+        align-content: ;
+        border: 1px solid black;
+        font-size: 1em;
+        padding: 2em 0;
+    }
+
+    .current {
+        border: 2px solid black;
+    }
+
+    nav a:hover {
+        border: 2px solid black;
+    }
+
+    .container-inside {
+        width: 100%;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    /*    couldn't get the hamburger menu to work*/
+
+    /*
+    #toggle:checked .menu {
+        display: block;
+    }
+
+    .toggle-input:checked {
+        ~ .menu {
+            display: block;
+        }
+*/
+
+
 }

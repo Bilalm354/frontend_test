@@ -52,18 +52,32 @@ Once completed please send your completed work in a ZIP file to the email addres
                 <input class="inline" id="search" type="text" name="q" value="" placeholder="Search entire store here..." maxlength="128" autocomplete="off">
             </form>
         </div>
+
+        <div class="search-mobile">
+
+            <form action="#" method="get">
+                <label for="search"></label>
+                <input class="inline" id="search" type="text" name="q" value="" placeholder="" maxlength="128" autocomplete="off">
+                <span class="fa fa-search"></span>
+            </form>
+        </div>
     </div>
 
     <div class="container-navbar">
         <div class="container-inside">
             <nav class="navbar">
-                <ul>
-                    <li>
-                        <a class="current" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                        <!--
+                <div class="mobile-button">
+                    <label class="burger" for="toggle">&#9776</label>
+                    <input type="checkbox" id="toggle" value="selected" class="toggle-input" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a class="current" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                            <!--
                     <ul>
                         <li><a href="#">Tops</a></li>
                         <li><a href="#">Bottoms</a></li>
@@ -71,14 +85,15 @@ Once completed please send your completed work in a ZIP file to the email addres
                         <li><a href="#">Special Offers</a></li>
                     </ul>
 -->
-                    </li>
-                    <li>
-                        <a href="#">Store Locations</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <a href="#">Store Locations</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
@@ -148,6 +163,20 @@ Once completed please send your completed work in a ZIP file to the email addres
                 </ul>
             </div>
         </div>
+
+        <div class="mobile-footer">
+            <ul>
+                <li><a href="#" class="line-under">Contact us</a></li>
+                <li><a href="#" class="line-under">Who We Are</a></li>
+                <li><a href="#" class="line-under">Blog</a></li>
+                <li><a href="#" class="line-under">Terms & Conditions</a></li>
+                <li><a href="#" class="line-under">Newsletter</a></li>
+                <li><a href="#" class="line-under">Privacy Policy</a></li>
+                <li><a href="#" class="line-under">Competitions</a></li>
+                <li><a href="#">Refer A Friend Scheme</a></li>
+            </ul>
+        </div>
+
         <div class="footer-social">
             <ul>
                 <li><a href="#"><img src="img/facebook-icon.svg" alt="Facebook"></a></li>
@@ -156,4 +185,6 @@ Once completed please send your completed work in a ZIP file to the email addres
             </ul>
         </div>
     </div>
-</footer></html>
+</footer>
+
+</html>
